@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/Alta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear nuevo FAQ"
+        android:layout_above="@id/FAQs"
+        android:layout_centerHorizontal="true"
+        android:onClick="RedirigeAltas"/>
+
+    <Button
+        android:id="@+id/FAQs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver FAQs"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="RedirigeFaqs"/>
+
+    <Button
+        android:id="@+id/PubliFaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQs publicados"
+        android:layout_below="@id/FAQs"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
